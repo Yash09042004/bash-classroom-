@@ -97,9 +97,8 @@ GitHub Actions will automatically run the checker when you push. Check the **Act
 2. **Review the corresponding chapter** from the Bash Beginner Series
 3. **Look at the hints** in the task file comments
 4. **Write your solution** (keep it simple!)
-5. **Test locally** with `./.lhb`
-6. **Fix any errors** using the feedback
-7. **Push to GitHub** when passing
+5. **Fix any errors** using the feedback
+6. **Push to GitHub** when passing
 
 ### 7. Solution
 If you are stuck at any point you can refer to the solution provided in the `solution.md` file.
