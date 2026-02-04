@@ -30,19 +30,23 @@ cd bash-classroom-
 
 ```
 bash-classroom-/
-├── task1/task1.sh    # Chapter 1: Basic echo
-├── task2/task2.sh    # Chapter 2: Variables
-├── task3/task3.sh    # Chapter 3: Arguments
-├── task4/task4.sh    # Chapter 4: Arrays
-├── task5/task5.sh    # Chapter 5: Arithmetic
-├── task6/task6.sh    # Chapter 6: String operations
-├── task7/task7.sh    # Chapter 7: If-else
-├── task8/task8.sh    # Chapter 8: Loops
-├── task9/task9.sh    # Chapter 9: Functions
-├── task10/task10.sh  # Chapter 10: Command substitution
-├── TASKS.md          # Detailed task descriptions
-├── README.md         # This file
-└── .lhb              # Automated checker (hidden binary)
+├── task1.sh              # Chapter 1: Basic echo
+├── task2.sh              # Chapter 2: Variables
+├── task3.sh              # Chapter 3: Arguments
+├── task4.sh              # Chapter 4: Arrays
+├── task5.sh              # Chapter 5: Arithmetic
+├── task6.sh              # Chapter 6: String operations
+├── task7.sh              # Chapter 7: If-else
+├── task8.sh              # Chapter 8: Loops
+├── task9.sh              # Chapter 9: Functions
+├── task10.sh             # Chapter 10: Command substitution
+├── TASKS.md              # Detailed task descriptions
+├── solution.md           # Solutions (for reference)
+├── README.md             # This file
+├── .lhb                  # Automated checker (hidden binary)
+└── .github/
+    └── workflows/
+        └── check.yml     # GitHub Actions workflow
 ```
 
 ### 3. Read Task Descriptions
@@ -59,9 +63,9 @@ Edit each `taskX.sh` file and add your solution:
 
 ```bash
 # Example: Editing task1
-nano task1/task1.sh
+nano task1.sh
 # or use your preferred editor
-vim task1/task1.sh
+vim task1.sh
 ```
 
 **Important Rules:**
@@ -122,13 +126,13 @@ You can test scripts manually:
 
 ```bash
 # Test task1
-bash task1/task1.sh
+bash task1.sh
 
 # Test task3 (with argument)
-bash task3/task3.sh test
+bash task3.sh test
 
 # Test task7 (with argument)
-bash task7/task7.sh root
+bash task7.sh root
 ```
 
 ## 🔧 Troubleshooting

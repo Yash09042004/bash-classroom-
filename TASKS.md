@@ -5,7 +5,7 @@ This document provides detailed descriptions for each task in the Bash Classroom
 ---
 
 ## Task 1: Hello World (Chapter 1)
-**File:** `task1/task1.sh`  
+**File:** `task1.sh`  
 **Difficulty:** Easy  
 **Concept:** Basic echo command
 
@@ -15,7 +15,7 @@ Print the exact text: `Hello, World!`
 ---
 
 ## Task 2: Variables (Chapter 2)
-**File:** `task2/task2.sh`  
+**File:** `task2.sh`  
 **Difficulty:** Easy  
 **Concept:** Variable assignment and usage
 
@@ -25,7 +25,7 @@ Store the word "Linux" in a variable and print: `Hello Linux`
 ---
 
 ## Task 3: Script Arguments (Chapter 3)
-**File:** `task3/task3.sh`  
+**File:** `task3.sh`  
 **Difficulty:** Easy  
 **Concept:** Accessing command-line arguments
 
@@ -35,7 +35,7 @@ Print the first argument in the format: `Arg: <value>`
 ---
 
 ## Task 4: Arrays (Chapter 4)
-**File:** `task4/task4.sh`  
+**File:** `task4.sh`  
 **Difficulty:** Easy  
 **Concept:** Array creation and printing
 
@@ -45,7 +45,7 @@ Create an array containing `a`, `b`, `c` and print all values in one line separa
 ---
 
 ## Task 5: Arithmetic Operations (Chapter 5)
-**File:** `task5/task5.sh`  
+**File:** `task5.sh`  
 **Difficulty:** Easy  
 **Concept:** Basic arithmetic
 
@@ -55,7 +55,7 @@ Add 5 + 3 and print the result (which is 8)
 ---
 
 ## Task 6: String Length (Chapter 6)
-**File:** `task6/task6.sh`  
+**File:** `task6.sh`  
 **Difficulty:** Easy  
 **Concept:** String manipulation
 
@@ -65,7 +65,7 @@ Store the string "HelloWorld" in a variable and print its length (which is 10)
 ---
 
 ## Task 7: If-Else Conditionals (Chapter 7)
-**File:** `task7/task7.sh`  
+**File:** `task7.sh`  
 **Difficulty:** Medium  
 **Concept:** Conditional statements
 
@@ -75,7 +75,7 @@ If the first argument is "root", print "ROOT", otherwise print "USER"
 ---
 
 ## Task 8: Loops (Chapter 8)
-**File:** `task8/task8.sh`  
+**File:** `task8.sh`  
 **Difficulty:** Easy  
 **Concept:** For loops
 
@@ -85,7 +85,7 @@ Print numbers 1, 2, and 3, each on a new line
 ---
 
 ## Task 9: Functions (Chapter 9)
-**File:** `task9/task9.sh`  
+**File:** `task9.sh`  
 **Difficulty:** Medium  
 **Concept:** Function definition and calling
 
@@ -95,7 +95,7 @@ Create a function named `greet` that prints "Hello", then call the function
 ---
 
 ## Task 10: Command Substitution (Chapter 10)
-**File:** `task10/task10.sh`  
+**File:** `task10.sh`  
 **Difficulty:** Easy  
 **Concept:** Command substitution and automation
 
@@ -106,14 +106,17 @@ Print "Hello" followed by the current username (but the expected output is just 
 
 ### Running Your Scripts
 ```bash
-# Make script executable
-chmod +x task1/task1.sh
+# Make script executable (if needed)
+chmod +x task1.sh
 
-# Run the script
-./task1/task1.sh
+# Run a script
+./task1.sh
 
-# Run with arguments (for tasks that need them)
-./task3/task3.sh test
+# Or use bash directly
+bash task1.sh
+
+# For scripts that need arguments
+./task3.sh test
 ```
 
 ### Common Mistakes to Avoid
