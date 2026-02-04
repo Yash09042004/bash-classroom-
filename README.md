@@ -83,7 +83,7 @@ Once you're happy with your solutions:
 
 ```bash
 git add .
-git commit -m "Completed tasks 1-5"
+git commit -m "Completed tasks 1-10"
 git push origin main
 ```
 
