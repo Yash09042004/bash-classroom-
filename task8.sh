@@ -14,17 +14,12 @@
 # ============================================================
 
 solve() {
-    local start=$1
-    local end=$2
-    local sum=0
+    # TODO: Implement this function
+    # Hint: Use a for loop to iterate from $1 to $2
+    # Hint: Check if number is even using: if [ $((num % 2)) -eq 0 ]
+    # Hint: Keep a running sum and echo the final result
     
-    for ((i=start; i<=end; i++)); do
-        if [ $((i % 2)) -eq 0 ]; then
-            sum=$((sum + i))
-        fi
-    done
-    
-    echo $sum
+    echo "0"  # Replace this with your implementation
 }
 
 # ============================================================

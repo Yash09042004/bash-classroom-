@@ -15,17 +15,13 @@
 # ============================================================
 
 solve() {
-    local filename=$1
-    local count=0
+    # TODO: Implement this function
+    # Hint: Read the file line by line using: while IFS= read -r line
+    # Hint: Check if line is not empty using: if [ -n "$line" ]
+    # Hint: Or use grep to count: grep -c -v '^[[:space:]]*$' "$1"
+    # Hint: Keep a counter and increment for each non-empty line
     
-    while IFS= read -r line; do
-        # Check if line is not empty (after trimming whitespace)
-        if [ -n "$(echo "$line" | tr -d '[:space:]')" ]; then
-            count=$((count + 1))
-        fi
-    done < "$filename"
-    
-    echo $count
+    echo "0"  # Replace this with your implementation
 }
 
 # ============================================================

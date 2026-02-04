@@ -15,14 +15,13 @@
 # ============================================================
 
 solve() {
-    local n=$1
-    local result=1
+    # TODO: Implement this function
+    # Hint: You can use either recursion or a loop
+    # Hint: Base case: if n <= 1, return 1
+    # Hint: Recursive case: n * factorial(n-1)
+    # Hint: Or use a loop to multiply: result = result * i
     
-    for ((i=2; i<=n; i++)); do
-        result=$((result * i))
-    done
-    
-    echo $result
+    echo "1"  # Replace this with your implementation
 }
 
 # ============================================================
