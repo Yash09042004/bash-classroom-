@@ -160,7 +160,7 @@ chmod +x .lhb
 - **Automatic**: GitHub Actions runs the checker on every push
 - **Pass/Fail**: Each task is either correct or incorrect
 - **Feedback**: Detailed hints provided for failed tasks
-- **Progress**: See your score out of 10
+- **Progress**: See your score out of 100
 
 ## 🎯 Learning Resources
 
