@@ -90,6 +90,7 @@ git push origin main
 ### 6. Check GitHub Actions
 
 GitHub Actions will automatically run the checker when you push. Check the **Actions** tab in your repository to see the results.
+Check the **Grader** section in the actions tab for detailed results.
 
 ## 📖 How to Approach Each Task
 
