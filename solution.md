@@ -42,22 +42,53 @@ else
 fi
 ```
 
-## Task 8
+## Task 8: Sum of Even Numbers
 ```bash
-for i in 1 2 3; do
-    echo $i
-done
-```
-
-## Task 9
-```bash
-greet() {
-    echo "Hello"
+solve() {
+    local start=$1
+    local end=$2
+    local sum=0
+    
+    for ((i=start; i<=end; i++)); do
+        if [ $((i % 2)) -eq 0 ]; then
+            sum=$((sum + i))
+        fi
+    done
+    
+    echo $sum
 }
-greet
 ```
 
-## Task 10
+## Task 9: Factorial Calculator
 ```bash
-echo "Hello"
+solve() {
+    local n=$1
+    
+    # Base case
+    if [ $n -le 1 ]; then
+        echo 1
+        return
+    fi
+    
+    # Recursive case
+    local prev=$(solve $((n - 1)))
+    echo $((n * prev))
+}
+```
+
+## Task 10: Count Non-Empty Lines
+```bash
+solve() {
+    local filename=$1
+    local count=0
+    
+    while IFS= read -r line; do
+        # Check if line is not empty (after trimming whitespace)
+        if [ -n "$(echo "$line" | tr -d '[:space:]')" ]; then
+            count=$((count + 1))
+        fi
+    done < "$filename"
+    
+    echo $count
+}
 ```

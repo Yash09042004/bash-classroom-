@@ -74,33 +74,94 @@ If the first argument is "root", print "ROOT", otherwise print "USER"
 
 ---
 
-## Task 8: Loops (Chapter 8)
+## Task 8: Sum of Even Numbers (Chapter 8)
 **File:** `task8.sh`  
-**Difficulty:** Easy  
-**Concept:** For loops
+**Difficulty:** Medium  
+**Concept:** Loops and conditionals
 
 ### Objective
-Print numbers 1, 2, and 3, each on a new line
+Implement the `solve` function that calculates the sum of all even numbers in a given range.
+
+### Function Signature
+```bash
+solve() {
+    # Parameters: $1 = start, $2 = end
+    # Returns: Sum of even numbers from start to end (inclusive)
+}
+```
+
+### Examples
+- `solve 1 10` → Returns `30` (2+4+6+8+10 = 30)
+- `solve 1 20` → Returns `110` (2+4+6+8+10+12+14+16+18+20 = 110)
+- `solve 5 15` → Returns `50` (6+8+10+12+14 = 50)
+
+### Important Notes
+- **DO NOT modify the `main()` function** - it contains test cases
+- Only implement the `solve()` function
+- The checker will detect if you modify the main function
 
 ---
 
-## Task 9: Functions (Chapter 9)
+## Task 9: Factorial Calculator (Chapter 9)
 **File:** `task9.sh`  
 **Difficulty:** Medium  
-**Concept:** Function definition and calling
+**Concept:** Functions and recursion
 
 ### Objective
-Create a function named `greet` that prints "Hello", then call the function
+Implement the `solve` function that calculates the factorial of a given number.
+
+### Function Signature
+```bash
+solve() {
+    # Parameters: $1 = number (non-negative integer)
+    # Returns: Factorial of the number
+}
+```
+
+### Examples
+- `solve 5` → Returns `120` (5! = 5×4×3×2×1 = 120)
+- `solve 0` → Returns `1` (0! = 1 by definition)
+- `solve 7` → Returns `5040` (7! = 5040)
+
+### Important Notes
+- **DO NOT modify the `main()` function** - it contains test cases
+- Only implement the `solve()` function
+- You can use either recursion or loops
+- The checker will detect if you modify the main function
 
 ---
 
-## Task 10: Command Substitution (Chapter 10)
+## Task 10: Count Non-Empty Lines (Chapter 10)
 **File:** `task10.sh`  
-**Difficulty:** Easy  
-**Concept:** Command substitution and automation
+**Difficulty:** Medium  
+**Concept:** File processing and automation
 
 ### Objective
-Print "Hello" followed by the current username (but the expected output is just "Hello")
+Implement the `solve` function that counts the number of non-empty lines in a file.
+
+### Function Signature
+```bash
+solve() {
+    # Parameters: $1 = filename (path to file)
+    # Returns: Count of non-empty lines
+}
+```
+
+### Examples
+- File with content:
+  ```
+  Hello World
+  This is a test
+  
+  Another line
+  ```
+  `solve filename` → Returns `3` (3 non-empty lines)
+
+### Important Notes
+- **DO NOT modify the `main()` function** - it contains test cases
+- Only implement the `solve()` function
+- Empty lines (lines with only whitespace) should NOT be counted
+- The checker will detect if you modify the main function
 
 ## General Tips
 
