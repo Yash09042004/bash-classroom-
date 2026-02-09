@@ -1,21 +1,19 @@
 # Bash Practice Classroom 🐧
 
-Welcome to the Bash Classroom! This is a hands-on practice environment for the **Bash Beginner Series** course. Complete 10 practical tasks covering all essential bash scripting concepts.
+Welcome to the Bash Classroom! This is a hands-on practice environment for the **Bash Beginner Series** course. Complete 8 practical tasks covering essential bash scripting concepts from easy to medium difficulty.
 
 ## 📚 What You'll Learn
 
-This classroom covers **all 10 chapters** from the Bash Beginner Series:
+This classroom covers **8 progressive tasks** from the Bash Beginner Series:
 
-1. **Chapter 1**: Create and Run Your First Bash Shell Script
-2. **Chapter 2**: Understanding Variables in Bash
-3. **Chapter 3**: Passing Arguments to Bash Scripts
-4. **Chapter 4**: Using Arrays in Bash
-5. **Chapter 5**: Using Arithmetic Operators
-6. **Chapter 6**: String Operations in Bash
-7. **Chapter 7**: Decision Making With If-Else
-8. **Chapter 8**: Loops in Bash
-9. **Chapter 9**: Using Functions in Bash
-10. **Chapter 10**: Automation With Bash
+1. **Task 1 (Easy)**: Temperature Converter - Arithmetic operations and conditionals
+2. **Task 2 (Easy)**: String Reversal - String manipulation and loops
+3. **Task 3 (Medium)**: Prime Number Checker - Loops, conditionals, and modulo operations
+4. **Task 4 (Medium)**: Fibonacci Sequence Generator - Sequences and mathematical patterns
+5. **Task 5 (Medium)**: Palindrome Checker - String manipulation and comparison
+6. **Task 6 (Medium)**: Simple Password Validator - Pattern matching and validation
+7. **Task 7 (Medium)**: Greatest and Smallest Number Finder - Variable arguments and comparisons
+8. **Task 8 (Medium)**: Leap Year Checker - Complex conditionals with AND/OR operators
 
 ## 🚀 Getting Started
 
@@ -30,16 +28,14 @@ cd bash-classroom-
 
 ```
 bash-classroom-/
-├── task1.sh              # Chapter 1: Basic echo
-├── task2.sh              # Chapter 2: Variables
-├── task3.sh              # Chapter 3: Arguments
-├── task4.sh              # Chapter 4: Arrays
-├── task5.sh              # Chapter 5: Arithmetic
-├── task6.sh              # Chapter 6: String operations
-├── task7.sh              # Chapter 7: If-else
-├── task8.sh              # Chapter 8: Loops
-├── task9.sh              # Chapter 9: Functions
-├── task10.sh             # Chapter 10: Command substitution
+├── task1.sh              # Task 1: Temperature Converter (Easy)
+├── task2.sh              # Task 2: String Reversal (Easy)
+├── task3.sh              # Task 3: Prime Number Checker (Medium)
+├── task4.sh              # Task 4: Fibonacci Generator (Medium)
+├── task5.sh              # Task 5: Palindrome Checker (Medium)
+├── task6.sh              # Task 6: Password Validator (Medium)
+├── task7.sh              # Task 7: Greatest/Smallest Finder (Medium)
+├── task8.sh              # Task 8: Leap Year Checker (Medium)
 ├── TASKS.md              # Detailed task descriptions
 ├── solution.md           # Solutions (for reference)
 ├── README.md             # This file
@@ -69,8 +65,8 @@ vim task1.sh
 ```
 
 **Important Rules:**
-- ✅ Modify ONLY the `taskX.sh` files
-- ✅ Keep solutions simple (1-3 lines of code)
+- ✅ Implement ONLY the `solve()` function in each task file
+- ✅ Do NOT modify the `main()` function - it contains test cases
 - ❌ Do NOT rename files or folders
 - ❌ Do NOT create additional scripts
 - ❌ Do NOT modify the `.lhb` checker
@@ -83,7 +79,7 @@ Once you're happy with your solutions:
 
 ```bash
 git add .
-git commit -m "Completed tasks 1-10"
+git commit -m "Completed tasks 1-8"
 git push origin main
 ```
 
@@ -108,8 +104,8 @@ If you are stuck at any point you can refer to the solution provided in the `sol
 
 ### General Tips
 - Start with Task 1 and work sequentially
-- Each task builds on previous concepts
-- Solutions should be 1-3 lines of code (excluding shebang and comments)
+- Tasks progress from Easy (1-2) to Medium (3-8) difficulty
+- Implement only the `solve()` function - don't modify `main()`
 - Match the expected output **exactly** (case, spaces, punctuation matter!)
 
 ### Common Mistakes to Avoid
@@ -125,14 +121,14 @@ If you are stuck at any point you can refer to the solution provided in the `sol
 You can test scripts manually:
 
 ```bash
-# Test task1
+# Test task1 (Temperature Converter)
 bash task1.sh
 
-# Test task3 (with argument)
-bash task3.sh test
+# Test task2 (String Reversal)
+bash task2.sh
 
-# Test task7 (with argument)
-bash task7.sh root
+# Test task3 (Prime Number Checker)
+bash task3.sh
 ```
 
 ## 🔧 Troubleshooting
@@ -147,14 +143,10 @@ bash task7.sh root
 - Use the hints provided by the checker
 
 ### GitHub Actions failing
-- Test locally first with `./.lhb`
 - Make sure all tests pass locally before pushing
 - Check the Actions tab for detailed error messages
 
-### Permission denied when running `.lhb`
-```bash
-chmod +x .lhb
-```
+
 
 ## 📊 Grading
 
@@ -165,19 +157,19 @@ chmod +x .lhb
 
 ## 🎯 Learning Resources
 
-- **Bash Beginner Series**: [Link to course]
+- **Bash Beginner Series**: https://linuxhandbook.com/courses/bash/
 - **TASKS.md**: Detailed task descriptions in this repo
 - **Task Comments**: Each task file has inline hints
 
 ## 🏆 Completion
 
-Once all 10 tasks pass, you'll see:
+Once all 8 tasks pass, you'll see:
 
 ```
 🎉 Perfect! You've completed all tasks! 🚀
 ```
 
-Congratulations! You've mastered the basics of bash scripting!
+Congratulations! You've mastered essential bash scripting concepts including conditionals, loops, string manipulation, and complex logical operations!
 
 ## 📝 Notes
 
